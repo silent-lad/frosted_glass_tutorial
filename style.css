@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Allura', cursive;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./bg_1.jpg");
+    background-size: cover;
+    /* background: rgb(233, 132, 77); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.glass {
+    width: 30%;
+    height: 20%;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #2972fa;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px rgba(0, 27, 77, 0.521);
+    padding: 1%;
+    text-align: center;
+}
+@media only screen and (max-width: 786px) {
+    .glass {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Frosted glass CSS */
+.frosted_1 {
+    /* Frosted glass affect */
+    -webkit-backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px); 
+}
+
+.frosted_2 {
+    /* Frosted glass affect */
+    -webkit-backdrop-filter: blur(8px);  
+    backdrop-filter: blur(8px); 
+
+    /* Add box-shadow for more darker */
+    box-shadow: 0px 10px 15px 10px rgba(0 ,0 ,0 ,0.15);
+    background-color: rgba(228 ,228 ,228 ,0.10);
+}
+
+.frosted_3 {
+    filter: drop-shadow(2px 4px 6px black);
+    background-color: rgba(152, 151, 151, 0.2); 
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+}
